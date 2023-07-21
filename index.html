@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h3 class="border-bottom border-2 py-4 p-4 fs-2 text-secondary mb-4 ">Bookmarker</h3>
+        </div>
+    </header>
+
+    <div class="container text-center  p-5 rounded pp ">
+    
+        <div class="w-75 mx-auto ">
+            
+            <h2 class="mb-5">Bookmark your favorite sites</h2>
+
+            <label for="siteName" class="form-label fw-bold mb-4"><span>site Name:</span></label>
+            <input type="text" class="form-control mb-4" id="siteName" placeholder="Bookmarker Name">
+
+            <p class="alert alert-danger d-none fw-bold" id="alertName">Name Is Required</p>
+
+            <label for="siteUrl" class="form-label fw-bold mb-4"><span>site Url:</span></label>
+            <input type="url" class="form-control mb-4" id="siteUrl" placeholder="website url">
+        
+            <p class="alert alert-danger d-none fw-bold" id="alertExite">Url Is Exite</p>
+
+      
+
+        <button onclick="addSubmit()" class="button  mt-4 " id="btnAdd">Submit</button>
+        </div>
+
+    </div>
+   
+    <div class="container  p-4 ">
+        <table class="table text-center w-75 mx-auto ">
+            <thead class="text-info ">
+                <th>NAME</th>
+                <th>URL</th>
+                <th>VISIT</th>
+                <th>DELETE</th>
+            </thead>
+            <tbody id="tBody">
+               <!-- <tr>
+                <td></td>
+                <td></td>
+               <td>
+                <a class="btn btn-primary rounded-pill" href="" target="_blank">visit</a>
+               </td>
+               <td>
+                <button onclick="deleteInfo(${i})" class="btn btn-danger rounded-pill">delete</button>
+               </td>
+               </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    
+
+    <footer>
+        <div class="container ">
+            <p class="border-top border-2 py-4 p-4  text-secondary mb-4 ">© 2019 Bookmarker Inc.</p>  
+        </div>
+    </footer>
+
+
+
+
+   
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
